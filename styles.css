@@ -6,6 +6,8 @@ body {
     margin: 100px auto;
     width: 150px;
     display: inline-block;
+    justify-content: center;
+    
 }
 .imagenes-container .imagen{
     position: relative;
@@ -15,8 +17,8 @@ body {
     
 }
 .imagenes-container .imagen img{
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     transition: transform 0.3s ease-in-out;
     
 }
@@ -46,6 +48,7 @@ body {
 }
 .imagenes-container .imagen:hover .nombre {
     display: inline-block;
+    
 }
 
 .imagenes-container .imagen .nombre::before {
