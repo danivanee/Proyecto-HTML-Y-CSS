@@ -3,10 +3,11 @@ body {
     background-color: lightgoldenrodyellow;
 }
 .imagenes-container{
-    margin: 100px auto;
+    margin: 200px 100px;
     width: 150px;
     display: inline-block;
     justify-content: center;
+    
     
 }
 .imagenes-container .imagen{
@@ -30,7 +31,7 @@ body {
     color: white;
     display: none;
     min-width: 100px;
-    width: 100px;
+    width: 150px;
     top: -30px;
     left: calc(17%);
     padding: 10 px 15px;
@@ -42,12 +43,13 @@ body {
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    width: 100px;
+    width: 150px;
     text-align: center;
     box-sizing: border-box;
 }
 .imagenes-container .imagen:hover .nombre {
     display: inline-block;
+    transform: translateY(-20px);
     
 }
 
@@ -67,4 +69,10 @@ body {
 .imagenes-container .imagen:hover img{
     transform: translate(-8px);
 
+}
+@media (max-width: 680px){
+    .imagenes-container{
+        flex-direction:column;
+        height: 180vh;
+    }
 }
